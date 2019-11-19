@@ -4,11 +4,7 @@ import Aux from "../../../hoc/Aux/Aux";
 import Button from "../../UI/Button/Button";
 
 class OrderSummary extends Component {
-  // this could be a functonal component instead of class
-  componentDidUpdate() {
-    console.log('[OrderSummary] WillUpdate')
-  }
-
+ 
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
       return (
